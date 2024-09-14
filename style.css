@@ -35,7 +35,8 @@ body {
 .task-1.container {
 
   display: grid;
-  height: 100vh;
+  /* height: 100vh; */
+  height: 100lvh;
   grid-template-rows: auto 1fr auto;
 
 }
@@ -43,12 +44,22 @@ body {
 /* Task 2 */
 
 .task-2.container {
+
+  display: grid;
+  /* height: 100vh; */
+  height: 100lvh;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 20px;
+  place-content: center;
+
 }
 
 .task-2 .item-1 {
+  grid-column: 1/5;
 }
 
 .task-2 .item-2 {
+  grid-column: 5/-1;
 }
 
 /* Task 3.1 */
