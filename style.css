@@ -62,7 +62,7 @@ body {
   grid-column: 5/-1;
 }
 
-/* Task 3.1 */
+/* Task 3.1 and 3.2 */
 
 .task-3-1.container {
   display: grid;
@@ -119,38 +119,12 @@ body {
   }
 }
 
-/* Task 3.2 */
-
-.task-3-2.container {
-}
-
-.task-3-2 .header {
-}
-
-.task-3-2 .navigation {
-}
-
-.task-3-2 .ads {
-}
-
-.task-3-2 .sidebar {
-}
-
-.task-3-2 .main {
-}
-
-.task-3-2 .footer {
-}
-
-@media (min-width: 720px) {
-}
-
-@media (min-width: 1020px) {
-}
-
 /* Task 4 */
 
 .task-4.container {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
 }
 
 .task-4 .item-5 {
@@ -159,16 +133,28 @@ body {
 /* Task 5 */
 
 .task-5.container {
+  display: grid;
+  height: 100lvh;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
 }
 
 .task-5 .item-1 {
+  grid-row: 1 / 4;
+  grid-column: 1 / 4;
 }
 
 .task-5 .item-2 {
+  grid-row: 4 / 7;
+  grid-column: 4 / 7;
 }
 
 .task-5 .item-3 {
+  grid-row: 7 / 10;
+  grid-column: 7 / 10;
 }
 
 .task-5 .item-4 {
+  grid-row: 10 / 13;
+  grid-column: 10 / 13;
 }
